@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "RobotoBold";
+  src: local("RobotoBold"),
+    url("./font-assets/Roboto-Bold.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: local("RobotoMedium"),
+    url("./font-assets/Roboto-Medium.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "RobotoLight";
+  src: local("RobotoLight"),
+    url("./font-assets/Roboto-Light.ttf") format("truetype");
+  font-weight: 200;
+}
