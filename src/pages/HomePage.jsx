@@ -2,7 +2,7 @@ import style from '../styles/HomePage.module.css';
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import {logInUser} from '../store/user/userActions';
+import {logInAction} from '../store/user/userActions';
 
 const HomePage = () => {
     
@@ -17,7 +17,7 @@ const HomePage = () => {
 
         if(username.current.value.length < 5 || password.current.value.length < 5) return;
 
-        dispatch()
+        dispatch(logInAction(username.current.value, password.current.value))
 
     }
     
