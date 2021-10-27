@@ -1,0 +1,43 @@
+.box {
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	margin-top: 35px;
+	flex-direction: column;
+	display: flex;
+	z-index: 10000;
+	right: 20px;
+}
+
+.box ul {
+	background-color: rgb(255, 255, 255);
+	font-size: 13px;
+	font-weight: 300;
+	list-style-type: none;
+	border: 0.5px solid rgb(231, 231, 231);
+	display: flex;
+	flex-direction: column;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.box li {
+	cursor: pointer;
+	padding-bottom: 10px;
+	text-align: left;
+	padding-left: 10px;
+	transition: 0.2s ease all;
+	color: rgb(66, 66, 66);
+}
+
+.box li:hover {
+	color: var(--gray);
+}
+
+.box li:first-child {
+	padding-top: 10px;
+}
+
+.box a {
+	text-decoration: none;
+	color: rgb(66, 66, 66);
+}

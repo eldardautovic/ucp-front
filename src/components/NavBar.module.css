@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 0 20px;
+}
+
+.avatar img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(46, 46, 46);
+}
