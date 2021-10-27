@@ -1,7 +1,13 @@
+import NavBar from '../components/NavBar';
+import { useSelector } from 'react-redux';
+
 const Panel = () => {
+    
+    const name = useSelector((state) => state.user.username);
+    
     return (
         <div>
-            <h1>Logged in!</h1>
+            <NavBar name={name} />
         </div>
     )
 }

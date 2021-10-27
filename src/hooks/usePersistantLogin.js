@@ -14,7 +14,7 @@ export const usePersistantLogin = () => {
         console.log(decodedToken);
 
         if(decodedToken.signed)
-            dispatch(userActions.logIn());
+            dispatch(userActions.logIn({username: decodedToken.user, admin: decodedToken.admin}));
 
     }
     
