@@ -19,7 +19,7 @@ const BoxComponent = (props) => {
 				{ admin && <li onClick={handleClick}>Admin panel</li>}
 				<li onClick={handleClickOutside}>Nalog</li>
 				<li onClick={handleClickOutside}>
-					<Link to="/notifications">Odjavi se</Link>
+					<Link to="/logout">Odjavi se</Link>
 				</li>
 			</ul>
 		</div>
