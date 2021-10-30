@@ -12,8 +12,10 @@ export const userSlice = createSlice({
         state.loggedIn = true;
         state.username = action.payload.username;
         state.admin = action.payload.admin;
-    },
-    logOut: (state) => {
+      },
+      logOut: (state) => {
+        state.admin = null;
+        state.username = null;
         state.loggedIn = false;
     }
   },

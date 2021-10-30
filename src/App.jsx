@@ -9,6 +9,7 @@ import {
 
 import HomePage from './pages/HomePage';
 import Panel from './pages/Panel';
+import Logout from './pages/Logout';
 import Register from './pages/Register';
 
 import { useSelector } from 'react-redux';
@@ -19,12 +20,6 @@ const App = () => {
   usePersistantLogin();
 
   const loggedIn = useSelector((state) => state.user.loggedIn);
-
-  useEffect(() => {
-
-    console.log(loggedIn);
-
-  }, [loggedIn]);
 
   return (
     <div>
@@ -39,6 +34,9 @@ const App = () => {
           </Route>
           <Route path="/panel">
             <Panel />
+          </Route>
+          <Route path="/logout">
+            <Logout />
           </Route>
         </Switch>
     </Router>
