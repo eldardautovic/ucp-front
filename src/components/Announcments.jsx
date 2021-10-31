@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import {fetchAnnouncments} from '../store/announcments/announcmentActions';
 import { useDispatch } from 'react-redux';
+import Announcment from './Announcment';
+import style from './Announcments.module.css';
 const Announcments = () => {
 
     const dispatch = useDispatch();
@@ -14,14 +16,10 @@ const Announcments = () => {
 
     const announcments = useSelector((state) => state.announcments.announcments);
 
-    useEffect(() => {
-        console.log(announcments)
-    }, [announcments]);
-
     return (
-        <div>
+        <div className={style.container}>
            {announcments && announcments.map((element) => {
-               return <h1>eeeee</h1>
+               return <Announcment content={element} />
            })}
         </div>
     )
