@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar';
 import { useSelector } from 'react-redux';
 import Announcments from '../components/Announcments';
+import PanelInformation from '../components/PanelInformation';
 const Panel = () => {
 
 
@@ -9,6 +10,7 @@ const Panel = () => {
     return (
         <div>
             <NavBar name={name} />
+            <PanelInformation />
             <Announcments />
         </div>
     )
